@@ -5,4 +5,5 @@ let $messageBox = document.querySelector('.msgBox');
 $messageBox.style.width = '100px';
 $messageBox.style.height = "100px";
 $messageBox.style.backgroundColor = "green";
-$messageBox.innerHTML = '채팅창입니다'
+$messageBox.innerHTML = '채팅창입니다';
+
