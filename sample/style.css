@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  
+}
+
+#chatBody{
+  padding: 10px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.chatList{
+  background-color: salmon;
+  width: 30%;
+  height: 100%;
+  
+}
+
+.chatContent{
+  background-color: lightgreen;
+  width: 70%;
+  height: 100%;
+  
+}
