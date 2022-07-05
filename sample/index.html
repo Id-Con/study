@@ -12,24 +12,26 @@
     <div id="chatBody">
         <div class="chatList">
             <div class="myProfile">
-                <span class="iconify myProfileicons" data-icon="carbon:user-avatar-filled"></span>
-                <span class="myName">Garrett Caldwell</span>
+                <div class="profile">
+                    <span class="iconify myProfileicons" data-icon="carbon:user-avatar-filled"></span>
+                    <span class="myName">Garrett Caldwell</span>
+                </div>
                 <span class="iconify myProfileicons purple" data-icon="bx:message-rounded-add"></span>
             </div>
             <ul class="myChatList">
-                <li><span class="iconify chatPic" data-icon="akar-icons:circle"></span><span>The Real Backpackers</span></li>
-                <li><span class="iconify chatPic" data-icon="akar-icons:circle"></span><span>Developers</span></li>
-                <li><span class="iconify chatPic " data-icon="akar-icons:circle"></span><span>Dad</span></li>
+                <li class="selectedChatList"><span class="iconify chatPic" data-icon="akar-icons:circle"></span>The Real Backpackers</li>
+                <li><span class="iconify chatPic" data-icon="akar-icons:circle"></span>Developers</li>
+                <li><span class="iconify chatPic " data-icon="akar-icons:circle"></span>Dad</li>
             </ul>
         </div>
         <div class="chatContent">
             <div class="chatTitle">
                 <div class="title-name">
                     <span class="iconify chatPic " data-icon="akar-icons:circle"></span>
-                    <span>The Real Backpackers</span>
+                    <span class="selectedTitle">The Real Backpackers</span>
                 </div>
                 <div class="title-icons">
-                    <span class="iconify serarch" data-icon="carbon:search"></span>
+                    <span class="iconify search" data-icon="carbon:search"></span>
                     <span class="iconify help" data-icon="bxs:help-circle"></span>
                 </div>
             </div>
@@ -38,7 +40,6 @@
             </div>
             <form class="chatInput">
                 <input type="text" placeholder="Enter message">
-                <!-- <button><span class="iconify send" data-icon="fluent:send-20-filled"></span></button> -->
                 <button><span class="iconify clip" data-icon="el:paper-clip"></span></button>
             </form>
         </div>
