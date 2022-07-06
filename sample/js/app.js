@@ -4,8 +4,7 @@ console.log(`app is running`);
 let $chatList = document.querySelector('.chatList');
 let $chatPlus = document.querySelector('#chatPlus');
 let $addChat = document.querySelector('.addBtn');
-
-
+let $closeAlert = document.querySelector('.closeBtn');
 
 fetch('./user.json').then(res => res.json()).then((res) => {
     let $div = document.createElement('div');
@@ -28,10 +27,11 @@ fetch('./user.json').then(res => res.json()).then((res) => {
 });
 
 $addChat.addEventListener('click',()=>{
-    let $wrap = document.createElement('div');
-    $wrap.classList.add('wrap');
-    let $alert = document.createElement('div');
-    $alert.classList.add('alert');
-    document.body.appendChild($alert);
-    document.body.appendChild($wrap);
+    let $showAlert = document.querySelector('#alertWrap');
+    $showAlert.style.display = 'block';
+})
+
+$closeAlert.addEventListener('click',()=>{
+    let $showAlert = document.querySelector('#alertWrap');
+    $showAlert.style.display = 'none';
 })
