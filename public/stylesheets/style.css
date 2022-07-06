@@ -26,8 +26,29 @@ form button {
   border: none; 
   padding: 10px; 
 }
+
 #messages { 
+  display: flex;
+  flex-direction: column;
   list-style-type: none; 
   margin: 0; 
   padding: 0; 
+}
+
+.others-message-wrapper {
+  max-width: 70%;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 5px auto 5px 5px;
+}
+
+.my-message-wrapper {
+  max-width: 70%;
+  align-items: flex-end;
+  background-color: #ffd600; 
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 5px 5px 5px auto;
 }
