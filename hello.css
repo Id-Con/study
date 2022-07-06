@@ -1,8 +1,0 @@
-h1{
-  background-color: black;
-}
-
-.msgBox:hover {
-  transform: rotate(360deg);
-  transition: 3s;
-}
