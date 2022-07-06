@@ -5,28 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/f66e350821.js" crossorigin="anonymous"></script>
     <title>chat</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
     <div id="chatBody">
         <div class="chatList">
-            <div class="myProfile">Garrett Caldwell</div>
+            <div class="myProfile">
+                <div class="profile">
+                    <span class="iconify myProfileicons" data-icon="carbon:user-avatar-filled"></span>
+                    <span class="myName">Garrett Caldwell</span>
+                </div>
+                <span class="iconify myProfileicons purple" data-icon="bx:message-rounded-add"></span>
+            </div>
             <ul class="myChatList">
-                <li>The Real Backpackers</li>
-                <li>Always Developers</li>
-                <li>Dad</li>
+                <li class="selectedChatList"><span class="iconify chatPic" data-icon="akar-icons:circle"></span>The Real Backpackers</li>
+                <li><span class="iconify chatPic" data-icon="akar-icons:circle"></span>Developers</li>
+                <li><span class="iconify chatPic " data-icon="akar-icons:circle"></span>Dad</li>
             </ul>
         </div>
         <div class="chatContent">
-            <div class="chatTitle">The Real Backpackers</div>
-            <div class="chatState">hello</div>
+            <div class="chatTitle">
+                <div class="title-name">
+                    <span class="iconify chatPic " data-icon="akar-icons:circle"></span>
+                    <span class="selectedTitle">The Real Backpackers</span>
+                </div>
+                <div class="title-icons">
+                    <span class="iconify search" data-icon="carbon:search"></span>
+                    <span class="iconify help" data-icon="bxs:help-circle"></span>
+                </div>
+            </div>
+            <div class="chatState">
+                <!-- 여기에 메세지 -->
+            </div>
             <form class="chatInput">
-                <input type="text">
-                <button>submit</button>
+                <input type="text" class="textinput" placeholder="Enter message">
+                <input type="file" class="upload"><span class="iconify clip" data-icon="el:paper-clip"></span></input>
             </form>
         </div>
     </div>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
