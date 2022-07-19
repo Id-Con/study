@@ -1,24 +1,58 @@
-const messageList = document.querySelector("ul");
-const messageForm = document.querySelector("form");
-const socket = new WebSocket(`ws://${window.location.host}`);
+const socket = io();
 
-socket.addEventListener("open", () => {
-  console.log("Connected to Server✅");
-});
+const welcome = document.querySelector("#welcome");
+const readyRoom = welcome.querySelector("#readyRoom");
+// const roomName = readyRoom.querySelector("#roomName");
+// const nickName = readyRoom.querySelector("#nickName");
 
-socket.addEventListener("message", (message) => {
-  console.log("New Message: ", message.data);
-});
+const room = document.querySelector("#room");
+room.hidden = true;
 
-socket.addEventListener("close", () => {
-  console.log("Disconnected from Server ");
-});
+let roomTitle;
 
-const handleSubmit = (e) => {
+const addMessage = (message) => {
+  const ul = room.querySelector("ul");
+  const li = document.createElement("li");
+  li.innerText = message;
+  ul.append(li);
+};
+
+const handleMessageSubmit = (e) => {
   e.preventDefault();
-  const input = messageForm.querySelector("input");
-  socket.send(input.value);
+  const input = room.querySelector("input");
+  const value = input.value;
+  socket.emit("new_message", input.value, roomTitle, () => {
+    addMessage(`내 메세지: ${value}`);
+  });
   input.value = "";
 };
 
-messageForm.addEventListener("submit", handleSubmit);
+const showRoom = () => {
+  room.hidden = false;
+  welcome.hidden = true;
+  const h3 = room.querySelector("h3");
+  h3.innerText = `Room ${roomTitle}`;
+  const form = room.querySelector("form");
+  form.addEventListener("submit", handleMessageSubmit);
+};
+
+const handleRoomSubmit = (e) => {
+  e.preventDefault();
+  const roomName = readyRoom.querySelector("#roomName");
+  const nickName = readyRoom.querySelector("#nickName");
+  socket.emit("enter_room", roomName.value, nickName.value, showRoom);
+  roomTitle = roomName.value;
+};
+
+readyRoom.addEventListener("submit", handleRoomSubmit);
+
+// 메세지 관련
+socket.on("welcome", (user) => {
+  addMessage(`${user}님이 들어왔습니다.`);
+});
+
+socket.on("bye", (user) => {
+  addMessage(`${user}님이 나갔습니다.`);
+});
+
+socket.on("new_message", addMessage);
