@@ -15,6 +15,19 @@ const handleListen = () => console.log(`Listening on http://localhost:3000`);
 const httpServer = http.createServer(app);
 const io = SocketIO(httpServer);
 
+function publicRooms() {
+  const {
+    sockets: {
+      adapter: { sids, rooms },
+    },
+  } = io;
+  const publicRooms = [];
+  rooms.forEach((_, key) => {
+    sids.get(key) === undefined && publicRooms.push(key);
+  });
+  return publicRooms;
+} // 방의 갯수 구하기
+
 io.on("connection", (socket) => {
   socket["nickname"] = "익명의 사용자";
   socket.on("enter_room", (roomTitle, nickname, done) => {
@@ -33,25 +46,5 @@ io.on("connection", (socket) => {
     done();
   });
 });
-
-// const wss = new WebSocket.Server({ server });
-// const sockets = [];
-// wss.on("connection", (socket) => {
-//   sockets.push(socket);
-//   socket["nickname"] = "익명";
-//   console.log("Connected to Browser ✅");
-//   socket.on("close", () => console.log("Disconnected from the Browser"));
-//   socket.on("message", (msg) => {
-//     const message = JSON.parse(msg);
-//     switch (message.type) {
-//       case "new_msg":
-//         sockets.forEach((aSocket) => {
-//           aSocket.send(`${socket.nickname} : ${message.payload}`);
-//         });
-//       case "nickname":
-//         socket["nickname"] = message.payload;
-//     }
-//   });
-// });
 
 httpServer.listen(3000, handleListen);
