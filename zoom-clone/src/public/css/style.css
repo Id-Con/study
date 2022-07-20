@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #b2c7d9;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  background-color: #a9bdce;
+  height: 80px;
+}
+h1 {
+  padding: 1rem;
+}
+
+/* #welcome */
+#readyRoom {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto;
+}
+#readyRoom input {
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  height: 50px;
+  margin: 10px;
+}
+#readyRoom button {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #ffeb33;
+}
+#welcome h4 {
+  /* margin-top: 30px; */
+  padding: 30px;
+  font-size: 24px;
+  background-color: #a9bdce;
+}
+.roomlist {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* #room */
+
+#room h3 {
+  text-align: left;
+  font-size: 32px;
+  /* background-color: lightgray; */
+}
+#room ul {
+  height: calc(100vh - 180px);
+  padding: 0.3rem;
+}
+#room form {
+  display: flex;
+  height: 70px;
+}
+#room input {
+  height: 100%;
+  border: none;
+  flex: 8;
+}
+#room button {
+  height: 100%;
+  flex: 1;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #ffeb33;
+}
+
+#room ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.enter {
+  font-size: 18px;
+  border-radius: 10px;
+  opacity: 0.7;
+  background-color: lightgray;
+  margin: 5px;
+}
+.gone {
+  font-size: 18px;
+  border-radius: 10px;
+  opacity: 0.7;
+  background-color: lightgray;
+  margin: 5px;
+}
+.my-message {
+  font-size: 20px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  align-self: flex-end;
+
+  background-color: #ffeb33;
+  margin: 5px;
+}
+.other-message {
+  font-size: 20px;
+
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+
+  background-color: white;
+  margin: 5px;
+}
