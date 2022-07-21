@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미건라이프</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://lh3.googleusercontent.com/i10LBV4MrcKLUErZfOpgSohzvVOrIZY1b9km5y1xQN_Jgs9ME0vTBxqJVlQLs6K-CuhYo-uhN0vz9E0zVhPOV1ibm6FyA5EwcKJfdv-LIo9Prt1XNoYC=s0"
+              alt=""
+              width="110"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-md fixed-top bg-white">
+        <div class="wrap-header">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://lh3.googleusercontent.com/i10LBV4MrcKLUErZfOpgSohzvVOrIZY1b9km5y1xQN_Jgs9ME0vTBxqJVlQLs6K-CuhYo-uhN0vz9E0zVhPOV1ibm6FyA5EwcKJfdv-LIo9Prt1XNoYC=s0"
+              alt=""
+              width="110"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-md-0 flex-wrap justify-content-end"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  제품안내
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">의료가전</a></li>
+                  <li><a class="dropdown-item" href="#">휴식가전</a></li>
+                  <li><a class="dropdown-item" href="#">건강가전</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  서비스
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">구매 및 장기할부</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">홈체어 신청</a></li>
+                  <li><a class="dropdown-item" href="#">미건 안심 케어</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  프로모션
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">뉴스</a></li>
+                  <li><a class="dropdown-item" href="#">이벤트</a></li>
+                  <li><a class="dropdown-item" href="#">광고일정</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  고객센터
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  <li><a class="dropdown-item" href="#">대리점 안내</a></li>
+                  <li><a class="dropdown-item" href="#">AS 문의</a></li>
+                  <li><a class="dropdown-item" href="#">고객 문의</a></li>
+                  <li><a class="dropdown-item" href="#">자주하는 질문</a></li>
+                  <li><a class="dropdown-item" href="#">설명서 다운로드</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  회사소개
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">미건라이프 소개</a></li>
+                  <li><a class="dropdown-item" href="#">CEO 메시지</a></li>
+                  <li><a class="dropdown-item" href="#">브랜드</a></li>
+                  <li><a class="dropdown-item" href="#">연혁</a></li>
+                  <li><a class="dropdown-item" href="#">Global 미건</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >대리점 모집</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >제휴 및 제안</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div
+          id="carouselExampleDark"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="https://lh3.googleusercontent.com/UXNNUqcH_XFr9DVlsbKTHfk2_d4w2qXRRxFzH1yFVnY-mnwcLBdjSwWe4sCax8r7LZ2V78RzeZ4EBfsYdqWY3HlVLzpPO263Gem36XtPgHLD0eMF55NEPA=w1920-h900-n"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-block fw-bold h-100 d-flex flex-column justify-content-center"
+              >
+                <h5>건강하게! 아름답게! 오래오래!</h5>
+                <p class="fs-1">Re, from Migun</p>
+                <p class="fs-6">
+                  미건의료기가 미건라이프로 새로운 도약을 시작합니다.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://lh3.googleusercontent.com/ykk1yOUjII0wWt61LXPKCr3bSGjl7ULRxF7ib3363lfleGWtipIIrTv-xehYm9g_AqgQ4hS6zpzvAnYxrr_98rZfbCrsVSfw8Pwoej6xAfbcT85VvxIoRg=w1920-h900-n"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-block fw-bold h-100 d-flex flex-column justify-content-center"
+              >
+                <h5>미건라이프가 새롭게 선보이는</h5>
+                <p class="fs-1">리:(Re:) 시리즈를 경험해 보세요.</p>
+                <p class="fs-6">
+                  리:(Re:) 시리즈를 통해 더 나은 라이프 스타일을 만들어 보세요.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section style="background-color: #f2f0e9">
+        <div class="container">
+          <img
+            class="d-block mx-auto"
+            src="https://lh3.googleusercontent.com/PUzL_lGd6sqCpxb1ljyx-Bb0V2OAX2doRjn2RWTlo_a9M3hnLzWUtdV_dQ5KHPVqR2SwZoiVRG5dYj1mz30v3AfKXp5i1sLuqlSlVX9Ksl0umPvfouvZ=w800"
+            alt=""
+            width="65%"
+          />
+        </div>
+      </section>
+
+      <section class="container mb-5">
+        <article>
+          <div class="row g-2 mt-5 text-center">
+            <div class="fs-5 fw-bold" style="color: rgb(148, 20, 10)">
+              기술은 그대로, 디자인은 새롭게!
+            </div>
+            <h1 class="fw-bold">리:본(Re:bone)</h1>
+            <button
+              class="btn border-dark p-2 pe-3 ps-3 mx-auto mt-5 mb-5"
+              style="width: 160px"
+            >
+              자세히 알아보기
+            </button>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://lh3.googleusercontent.com/AvY2ZwyJlFmwOD1fcTCLe4YD-m1hoQMqCYSUMud98HVcs20zq6zd2OUZK2g566OoR9VQBlV0D4TLzf31-CYu81ybEg4YIwqrnBAUSkkkm4WWu-VlKHkH4Q=s0"
+            alt=""
+            class="w-100"
+          />
+        </article>
+        <article class="mb-5">
+          <div class="row g-2 mt-5 text-center justify-content-center">
+            <div class="fs-5 fw-bold" style="color: rgb(148, 20, 10)">
+              New and Only
+            </div>
+            <h1 class="fw-bold mb-5">리:본(Re:bone)</h1>
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-12 row gy-2">
+                <img
+                  src="https://lh3.googleusercontent.com/-NZ0-9mBnY-iIax5ICVXX_z-_flBAHDfdLudmCOzLCO1KguhhEHiUMjGj4XIi2B5AkY2K3n47k0bZugDzgpELrQ1EAWBg8NqXBp_7rAz5LcZ24LX9QqL=w700-h500-n"
+                  alt=""
+                  class="w-100"
+                />
+                <div class="fw-bold mt-4">척추 라인을 따라 압박 자극하는</div>
+                <h4 class="fw-bold">2개의 5구 온열 도자로 구성</h4>
+              </div>
+              <div class="col-md-4 col-12 row gy-2">
+                <img
+                  src="https://lh3.googleusercontent.com/nMtrmzHNmhYo2Ho7NL2pxEaQqbio3T_mV-KMhbYarBVYIoiW2hy33Zv0vS8sbpBKDXsqG_Ndn38oRys5XfsPPKw5nncwY-ZUwtVUDEjwO57iXuzwHDbIWSo=w700-h500-n"
+                  alt=""
+                  class="w-100"
+                />
+                <div class="fw-bold mt-4">다양한 부위에 사용 가능하도록</div>
+                <h4 class="fw-bold">보조도자 2종 제공</h4>
+              </div>
+              <div class="col-md-4 col-12 row gy-2">
+                <img
+                  src="https://lh3.googleusercontent.com/wSty3-bDQQCr0ylt0RSG71UnIDPry7uEL_a_50n_Jv2ib49APTjcIq3h6Cpn0iD765iCbooIDGxho5fvEg3BL58ket_AmZP5BxdEd0wWhr5_KX2yIyBrsw=w700-h500-n"
+                  alt=""
+                  class="w-100"
+                />
+                <div class="fw-bold mt-4">라이프 스타일 맞춤</div>
+                <h4 class="fw-bold fs-4">감각적으로 Upgrade된 디자인</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="pb-5" style="background-color: #f2f0e9">
+        <div class="container d-flex flex-column">
+          <div class="row gy-3 text-center fw-bold mt-5">
+            <div class="fs-3">온열 도자 기술과 압박 자극을 통해</div>
+            <h1 class="fw-bolder" style="color: rgb(148, 20, 10)">
+              근육통 완화
+            </h1>
+            <p>※ 식약처 사용목적 인증 (제인 12-437호)</p>
+          </div>
+          <div
+            class="m-5 mx-auto"
+            style="background-color: #777777; width: 30px; height: 2px"
+          ></div>
+          <article class="row p-5 gx-5">
+            <img
+              src="https://lh3.googleusercontent.com/yq63w8b5Hgo_MQEB7G3wOzXv7N5RDc4aUJsRm2-CdoL5iOA2kBrl2QDuDciTV5HesRvQrO__65rsnazK0KSFkxBJpB8m9o6EJi_yWOe4wXfweNS_yI4sqA=w800"
+              alt=""
+              class="col-12 col-md-6"
+            />
+            <div class="col-12 col-md-5 row gy-2">
+              <div style="color: rgb(148, 20, 10)">CARE POINT 1.</div>
+              <h2 class="fw-bold">전신 집중</h2>
+              <p class="fw-bold">압박 자극 및 온열을 제공합니다.</p>
+              <p style="color: rgb(102, 102, 102); font-size: small">
+                상부 도자(2개의 5구 온열 도자)가 이동하면서 지압과 ‌온열 자극을
+                동시에 가하며, 하부는 종아리부터 발끝까지 에어셀을 주기적으로
+                부풀려 압박 자극 및 온열을 제공합니다.
+              </p>
+            </div>
+          </article>
+          <article class="row p-5 flex-row-reverse gx-5">
+            <img
+              src="https://lh3.googleusercontent.com/Lt2G0lgw9XQyFTiSXdCXpfUb3R5aUozh-2jSRoI6V8nBXspZ--6NJTDA8qk2WIqi1xNdWs2Cx758QA6QuF7cKeIN6VOnXQEENdDfPAkJRVpxPKF1-__o=w800"
+              alt=""
+              class="col-12 col-md-6"
+            />
+            <div class="col-12 col-md-5 row text-end gy-2">
+              <div style="color: rgb(148, 20, 10)">CARE POINT 2.</div>
+              <h2 class="fw-bold">상체 집중</h2>
+              <p class="fw-bold">
+                척추 라인을 따라 2개의 5구 온열 도자가 이동하면서 지압과 온열
+                자극을 동시에 가합니다.
+              </p>
+              <p style="color: rgb(102, 102, 102); font-size: small">
+                프로그램에 맞춰 분리된 2개의 5구 도자가 경추, 흉추, 요추로
+                이어지는 척추 라인을 이동하면서 관리해 줍니다.
+              </p>
+            </div>
+          </article>
+          <article class="row p-5 gx-5">
+            <img
+              src="https://lh3.googleusercontent.com/J6cT7knoYBsVbPYcJ9DVRjV_AyTUjefeBC6feu0sYIsflg0zv5xtWrVDllQ7Xel16jiG9X2YBI19Kdj2rfB4zxU5daCr_SUGk-JWurnLJg-p77GUGCGmvQ=w800"
+              alt=""
+              class="col-12 col-md-6"
+            />
+            <div class="col-12 col-md-5 row gy-2">
+              <div style="color: rgb(148, 20, 10)">CARE POINT 3.</div>
+              <h2 class="fw-bold">하체 집중</h2>
+              <p class="fw-bold">
+                16개 에어셀의 압박 마사지와 도자의 온열로‌ 지친 다리의 근육통을
+                완화해 줍니다.
+              </p>
+              <p style="color: rgb(102, 102, 102); font-size: small">
+                수축과 팽창을 반복하는 16개의 에어셀과 따뜻한 열 자극을 주는
+                온열 도자가 하체에 온열 압박 마사지를 제공하여 지친 다리의
+                근육통을 완화해 줍니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div
+          class="parallax row gy-5 align-items-center justify-content-center text-white text-center pb-5"
+        >
+          <div class="col-12 fs-2">
+            <div>맞춤 기능을 통해 내 몸에 맞게!</div>
+            <div class="fw-bold pb-5">리:본(Re:bone)을 경험해 보세요.</div>
+          </div>
+          <div class="container row mx-auto g-3" style="width: 60%">
+            <div class="col-12 col-md-4">
+              <img
+                src="https://lh3.googleusercontent.com/2YCkvY4U3gwKkxHLAeHvBAK2Gerd_ojgbcSsucEckaxRa2xCDyy5XTlvjH1Nxp6a0XRQGn1z6AhSMsQBtiseE12hrS5mhS5LeFbEGvwvMYfDAsAfxCla=s0"
+                alt=""
+              />
+              <h3 class="mt-5 fw-bold fs-3">
+                상/하부 개별 온도 조절‌ <br />
+                <span class="fs-6 fw-light" style="color: #eeeeee"
+                  >(5℃ 단위 설정)</span
+                >
+              </h3>
+              <p>
+                · 상부 : 40℃~70℃<br />
+                · 하부 : 40℃~60℃<br />
+                · 보조도자 : 40℃~70℃
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="https://lh3.googleusercontent.com/mrVRa8WwbNqyLCFzU3fVZm2M_z9yfctB3g9OqLAqQNdQ5tpJmHOSIe-5W29r3vljCzySjJxN1eIKYo3NvrCY_vdPSvyVFiSJl2-26zhYIXASwi7h_cXy=w800"
+                alt=""
+              />
+              <h3 class="mt-5 fw-bold fs-3">
+                하부 부위 에어셀 강도 설정‌ <br />
+              </h3>
+              <p>
+                약 / 중 / 강으로<br />
+                에어셀 강도 설정 가능
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="https://lh3.googleusercontent.com/1nXMRI2NpCJIJrJSWDxcLvWM2PHFC8qijZSOLSDnFlSxRGy1YST2psFJKYw2dwxDpphTfc-VIJBc0s1-4wJF6N2D0MMwsbtLuxZVQP4uCnm6EuFfraiAIw=w800"
+                alt=""
+              />
+              <h3 class="mt-5 fw-bold fs-3">
+                온도와 동작을 내 마음대로! <br />
+              </h3>
+              <p>
+                12가지<br />
+                사용자 모드 제공
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #f2f0e9">
+        <div class="container p-5">
+          <h4 class="fw-bold p-1">※ 사용 전 확인해 주세요.</h4>
+          <p>
+            광고심의필 22022-I10-19-1175 (유효기간 2025.05.31)<br />
+            이 제품은 <strong>'의료기기’</strong>입니다.
+            <strong>'사용상의 주의사항'</strong>과 <strong>'사용방법'</strong>을
+            확인 후 사용하십시오.
+          </p>
+          <div class="p-1">
+            <h6 class="fw-bold">- 품목명 (모델명)</h6>
+            개인용 온열기(MH01-WK0, MH01-SK0)
+          </div>
+          <div class="p-1">
+            <h6 class="fw-bold">- 사용 목적</h6>
+            1.개인용 온열기부(A83060.01) 인체에 일정한 열을 가하여 근육통 완화
+            등에 사용하거나 체온이 저하된 환자에게 열을 공급하는 전기로 가온되는
+            패드<br />2.의료용 진동기부(A82010.01) 경미한 근육통의 완화 등을
+            목적으로 인체에 물리적 에너지(압박 자극)을 가하는 기구
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="text-center pt-5 pb-5">
+          <div class="fs-3" style="color: rgb(148, 20, 10)">
+            지속적인 연구화 기술 개발을 통해
+          </div>
+          <h2 class="fw-bolder">신뢰 할 수 있는 제품을 만들고 있습니다.</h2>
+        </div>
+        <div class="container pb-5 mb-5">
+          <div class="row g-5">
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/gvglDAKTU5m9kw6tQNEBp2HJPKJbHvPciOpFtLrLbj7ovu-o0z9hDQAI2t_4kPhqsKKlzsJdMPewB1w2BgEVM2vhYJMN8WdBi0kpVhiPpnU5VjQHA7tZ=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">개인용 온열기 특허</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/awa58tzGM2gOzTDoyGK7LwFWo6T3115cv7K1Awz4M-OFjEMF9BQ_LFAMcS4ko7-yFHt3qJ_9maxmEOEoDkR11H-6a1Mrd7G14XQzrPARKQ91HR0CsPCb=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">미국 FDA ClassⅡ 510k 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/KjMh8Vo8QqoIgg_lY55VGgJjz6tkr7B-TxpKPbnRNxkfeV17ocTpK9piMU9RbMG7KV3qmZXMpuk6tGML83CNdKJrOlZtR8b0osYMkE7pebrN6EhZsZeXRg=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">CE 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/RA6Ccp17MYBxmhk_bBjwmmEmBtWDjgDU2ie7_HSTJzUtCGbWRIr2Y94r-dlKVu0q32gJFUsdwL2iVOuuuHsBhwJxhPIqtrxVxix-FqwnF6u69kx64XE2=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">GMP 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/4ZCIHzymVVkp_ggpdEDh82r9iOqxilW2GQECGY98S1L70UxXRxiSJLkNy_xNrDzBNWa9T5kx4rgE-xeSy7N_pYxuFlycZy_R9Zh22tkpuE4L-B4bz41EMlQ=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">ISO 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/qnejrUdJp8Dsh_nHJL2iKh0aG305qRWs8npgegebp7kfYPASNkz858dKHt9Olxkn4hR-9GLt_XKaEwgQsA0CXzsnQzHbpHXUq6FmSVLQdcz-TUfP1i9YIg=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">Intertek 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/pbbKJOlza4b4K45_b88twd0881QB-_s3iLJWbprLaXzEZA1Z6Z5nr-vStimaYm9oU1ELzeSCi-trP-y61_YZ6uzLXiHXDHKed00gPH9gpHjTvpshXz3L8w=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">한국의료기기산업협회 회원사</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/2xMNVkNioIpSmV579ZzadsfQoemKBSJDN1HEHSNimQtbUZ2myXWI2aqwYNw-TmDLx3QjytEolOZQzHAbfrSrWXKY2WXGVBrm3crffF0sxZMhbuo8d1oSBA=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">식품의약품안전처 인증 획득</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/jutf-H5MvOL0s1uJc07Hr9ceYWcjunZhYQls8M97DdD5ilWhzUYEWJJpxW1uJ5KMoJrkJRgkSiddUwFYo2qeSfDi7wYTCC_fkH267LJDUSyp5XvNjuiOjA=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">기업부설연구소 인정서</h5>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <img
+                src="https://lh3.googleusercontent.com/QEZBCSzvHvreajD0KNMUWlppAfrtOaj38USeUM9G785F3K_ZQt5gNmMPdkEdQMmLfjeqg_nEI2ei_owC2hGsocQ-EmQ4UiC48phAywAPyhdxiroPqr28jQ=w800"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="fw-bolder">한국무역협회 회원사</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container pb-5 mb-5">
+        <div class="divider-box"></div>
+      </div>
+      <section>
+        <div class="container text-center">
+          <h3 class="mb-5 fw-bolder">
+            미건라이프의 또 다른 제품을 확인해 보세요.
+          </h3>
+          <div class="row g-5">
+            <div class="col-12 col-md-6">
+              <img
+                src="https://lh3.googleusercontent.com/D2xQEXAkUARZI3SOQ9GOdCK81cvq7xwiV4or9gTmLhS81falHCR5gyiAsWzqI9MyjYSLyk88hnNfggWHTOkOMY3olmSzORq3rL37xd7SOE3raQJGKDy4cg=w700-h500-n"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="pt-2 fw-bold">리:바이브 (Re:vive)</h5>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="https://lh3.googleusercontent.com/TdEonDrvY7QElH_KrO6G7Qg4QOf5It4vdT_IMAmzLP4VO9cCilhyMesXE5X9VfzQwOFO_W-8iT2SMPy5y7aCvDIgwKN5LmM2DVaFNPiMTWuWpKus92Hn=w700-h500-n"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="pt-2 fw-bold">리:치 (Re:ach)</h5>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="https://lh3.googleusercontent.com/o2eEQGwg8zb3XhpbaLT4YEqgYk6KdJL4HBW5gGL5oq83DlR7xnqnK2Q_NQ6R-9k_Vogu9SaePHdCalWJNS0RukiEsW_11gzA6Xqpbbqln0W5TzoEUKQjmQ=w700-h500-n"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="pt-2 fw-bold">데일:리(DAY:RE) 닥터레그</h5>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="https://lh3.googleusercontent.com/sxx9gcpROQlW30fSkbHwhXkRIER5YYm2kxiwVN77K2Ka78D4BcnnEdaY4ehjRF6_ZQtaBQFZTZFi0E1zbBun5bjhyEod8H2OgOOU_f2HcxyeeI4MYDv5ueQ=w700-h500-n"
+                alt=""
+                class="w-100"
+              />
+              <h5 class="pt-2 fw-bold">데일:리(DAY:RE) 닥터케겔</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container pb-5 mb-5 pt-5 mt-5">
+        <div class="divider-box"></div>
+      </div>
+      <section>
+        <div class="container pb-5 mb-5">
+          <div class="row gx-5">
+            <img
+              src="https://lh3.googleusercontent.com/ath8REDMxo6xViFzMNpNHrijRqwW4KlVMz_rK-2j4sL42BBs28rOeuvXrJuhBkJ7OvugjWdqyA8fJq-LVYi_uxKL5xkYL66rCptT75ikBoE96jH1nwPVBA=w650-h370-n"
+              alt=""
+              class="col-6"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/R8uX2TOPk7mmbduob4t4gTCUAh7XqVsayWpLNEkI9ls_lLUUCycUhJw5mGnrevmoYSspTSE1frfFBCEgdm0zEJDajv1tC5zK8FTG8Amc8dl6_DD4lZgOG2Y=w650-h370-n"
+              alt=""
+              class="col-6"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="background-color: #f2f0e9">
+      <div class="container pb-5">
+        <div class="row pb-5">
+          <div class="col-12 col-md-6 pb-5 row gy-4 text-md-start text-center">
+            <h5 class="fw-bolder">미건라이프 주식회사</h5>
+            <div style="color: #555555">
+              대표: 장훈철 | 주소: 세종특별자치시 연동면 청연로 442-42 |
+              사업자번호: 307-81-05211 | 통신판매업 신고번호: 2010-세종시-0060
+              [사업자정보확인] | 제품 구매 및 대리점 문의:
+              migunlife@migunlife.co.kr | A/S문의: migunlife_as@migunlife.co.kr
+              | Fax: 042-255-4541
+            </div>
+            <div style="color: rgb(148, 20, 10)">개인정보처리방침</div>
+            <div style="color: #555555">
+              Copyright MIGUN. All Rights Reserved
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 text-md-end align-self-center text-center"
+            style="color: #555555"
+          >
+            <div>고객센터</div>
+            <div class="fs-3 fw-bold">1577-0033</div>
+            <div>평일 09:00 ~ 18:00 (점심시간 12:00~13:00)</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fixed-btn d-none d-md-block">
+      <img
+        class="d-block"
+        src="https://lh3.googleusercontent.com/EgCRYZVSI3dhAoGikrwABZolm756Q3mUziqQFqXKjQwkpU_CjUHJu3ew7tXobE2QUWU_aOs3BPVgrXSjwvVoXOcOvauIltNHKZp6kti9TTojpCAWxKrThXE"
+        alt=""
+      />
+      <img
+        class="d-block"
+        src="https://lh3.googleusercontent.com/DRrrO1ZFgnO5nDalanA0C-4198Uz_40y6q2ItHN-mJZQZhDlQDC5eI-Q4HDiVX8r1jh0i4I8-3d9c89HgiAmHeTnFjYG2J3LoGwVuTAZZLI0DhsDPKhGsw"
+        alt=""
+      />
+      <img
+        class="d-block"
+        src="https://lh3.googleusercontent.com/JmgVzfXAjGfYL4F6u51NcfPw7hMCDxF16044x-lNDundlSb1uMrvx7hR9qhw3fpSVNFTMg7beIbOzljEjYRPutJDqCNmxugPaFsdAK35kuD64Hfl6v8q"
+        alt=""
+      />
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
