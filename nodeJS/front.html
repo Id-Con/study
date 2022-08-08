@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node-axios</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <input
+          type="email"
+          placeholder="email을 입력해주세용"
+          id="email"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          placeholder="비밀번호를 입력해주세용"
+          id="pw"
+          value=""
+        />
+      </div>
+
+      <input type="button" onclick="onLoggin()" value="로그인" />
+    </div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    function onLoggin() {
+      const email = document.getElementById("email");
+      const password = document.getElementById("pw");
+      axios({
+        method: "POST",
+        url: "https://reqres.in/api/login",
+        data: {
+          email: email.value,
+          password: password.value,
+        },
+      })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+          throw new Error(error);
+        });
+    }
+  </script>
+  <script>
+    // axios
+    //   .get("https://www.zerocho.com/api/get")
+    //   .then((result) => {
+    //     console.log(result);
+    //     console.log(result.data);
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
+
+    // async / await 방식
+    // (async () => {
+    //   try {
+    //     const result = await axios.get("https://www.zerocho.com/api/get");
+    //     console.log(result);
+    //     console.log(result.data);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // })();
+  </script>
+</html>
