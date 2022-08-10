@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smile</title>
+    <style>
+      .canvas {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas class="canvas" width="500" height="500"></canvas>
+  </body>
+  <script>
+    const canvas = document.querySelector(".canvas");
+    const ctx = canvas.getContext("2d");
+
+    const toRadian = (deg) => {
+      return (deg * Math.PI) / 180;
+    };
+    ctx.beginPath();
+    ctx.arc(250, 250, 100, 0, toRadian(360), true);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(250, 250, 70, toRadian(20), toRadian(160), false);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(200, 230, 30, toRadian(-20), toRadian(200), true);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(300, 230, 30, toRadian(-20), toRadian(200), true);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(250, 250, 70, toRadian(20), toRadian(160), false);
+    ctx.stroke();
+  </script>
+</html>
